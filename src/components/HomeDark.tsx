@@ -137,7 +137,7 @@ export const HomeDark: React.FC = () => {
                 <PromotionCard
                   title="Premium Account Benefits"
                   backgroundImage="https://api.builder.io/api/v1/image/assets/TEMP/ca2cd3deda67d27f0470bffdcaa474fd18a319eb?placeholderIfAbsent=true"
-                  isWide={false}
+                  isWide={true}
                 />
               </>
             )}
