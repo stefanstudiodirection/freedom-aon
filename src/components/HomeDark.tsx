@@ -15,7 +15,7 @@ export const HomeDark: React.FC = () => {
   return (
     <div className="justify-center items-stretch flex max-w-[480px] w-full flex-col overflow-hidden bg-black mx-auto">
       <div className="w-full">
-        <StatusBar />
+        {/* <StatusBar /> */}
 
         <Header />
 
