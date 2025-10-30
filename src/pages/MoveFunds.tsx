@@ -44,7 +44,18 @@ export const MoveFunds: React.FC = () => {
   const destination = accounts[destinationAccount];
 
   const handleBack = () => {
-    navigate('/', { state: { sourceAccount } });
+    if (sourceAccount === 'pension') {
+      // Check if pension warning was dismissed
+      const hidePensionWarning = localStorage.getItem('hidePensionWarning') === 'true';
+      if (!hidePensionWarning) {
+        navigate('/pension-warning');
+      } else {
+        navigate('/');
+      }
+    } else {
+      // For savings or any other account, go back to home
+      navigate('/');
+    }
   };
 
   const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
