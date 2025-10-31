@@ -35,7 +35,7 @@ const budgetCategories: Record<'savings' | 'currentAccount', BudgetCategory[]> =
       date: 'May 2028',
       spent: 6050,
       target: 12000,
-      color: '#9B87F5'
+      color: '#A488F5'
     },
     {
       id: 'home-renovation',
@@ -44,7 +44,7 @@ const budgetCategories: Record<'savings' | 'currentAccount', BudgetCategory[]> =
       date: 'March 2027',
       spent: 10200,
       target: 25000,
-      color: '#7E69AB'
+      color: '#C7B6FB'
     }
   ],
   currentAccount: [
@@ -64,7 +64,7 @@ const budgetCategories: Record<'savings' | 'currentAccount', BudgetCategory[]> =
       date: 'This month',
       spent: 125,
       target: 200,
-      color: '#D4A229'
+      color: '#ECCA77'
     },
     {
       id: 'entertainment',
@@ -73,7 +73,7 @@ const budgetCategories: Record<'savings' | 'currentAccount', BudgetCategory[]> =
       date: 'This month',
       spent: 135,
       target: 300,
-      color: '#C49119'
+      color: '#F4E1B1'
     }
   ]
 };
