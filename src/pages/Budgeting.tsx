@@ -254,7 +254,8 @@ const Budgeting: React.FC = () => {
                     value={percentage} 
                     className="mb-2 h-2"
                     style={{
-                      ['--progress-background' as any]: category.color
+                      ['--progress-background' as any]: category.color,
+                      backgroundColor: '#D9D9D9' 
                     }}
                   />
                   
@@ -298,7 +299,7 @@ const Budgeting: React.FC = () => {
                             y={(viewBox.cy || 0) - 10}
                             className="fill-muted-foreground text-xs"
                           >
-                            Total
+                            Total spending
                           </tspan>
                           <tspan
                             x={viewBox.cx}
