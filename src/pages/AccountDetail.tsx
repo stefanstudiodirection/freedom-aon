@@ -224,7 +224,7 @@ const AccountDetail: React.FC = () => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="font-medium text-foreground">{getTransactionLabel(tr.type)}</div>
-                      <div className="text-sm text-white/60">{formatDate(tr.date)}</div>
+                      <div className="text-[#8E8E93] text-sm">{formatDate(tr.date)}</div>
                     </div>
                     <div className={`text-right font-semibold ${tr.amount > 0 ? 'text-[#34C759]' : 'text-foreground'}`}>
                       {tr.amount > 0 ? '+' : '-'}£{Math.abs(tr.amount).toFixed(2)}
