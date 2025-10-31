@@ -162,8 +162,8 @@ export const MoveFunds: React.FC = () => {
           <div className="bg-[#211E1E] rounded-lg p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div 
-                className="w-10 h-10 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: source.color }}
+                className="w-10 h-10 flex items-center justify-center bg-[#000] rounded-[4px]"
+                style={{ color: source.color }}
               >
                 <span className="text-2xl">{source.icon}</span>
               </div>
