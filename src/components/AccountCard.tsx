@@ -76,7 +76,8 @@ export const AccountCard: React.FC<AccountCardProps> = ({
           <div className="mb-2.5">
 					<MercerLogo
 						className={getTextColor()}
-						style={{ color: type === "pension" ? "#FFFFFF" : "#211E1E" }}
+						style={{ color: "#FFFFFF" }}
+						// style={{ color: type === "pension" ? "#FFFFFF" : "#211E1E" }}
             />
           </div>
 					<h2
