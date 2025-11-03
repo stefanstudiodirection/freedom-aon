@@ -127,7 +127,7 @@ export const HomeDark: React.FC = () => {
                 accountName="Pension"
                 subtitle=""
                 balance={formatBalance(accounts.pension.balance)}
-                onClick={() => navigate('/pension-warning')}
+                onClick={() => navigate('/account/pension')}
               />
             </div>
 
@@ -136,7 +136,7 @@ export const HomeDark: React.FC = () => {
 
         <section className="w-full pb-6 px-4 mt-6" aria-label="Promotions">
           <div className="flex w-full items-center gap-[40px_100px] leading-none justify-between">
-            <h2 className="text-foreground text-[19px] font-normal self-stretch my-auto">Promotions</h2>
+            <h2 className="text-foreground text-[19px] font-normal self-stretch my-auto">Rewards</h2>
             <button
               className="self-stretch flex items-center gap-1 text-lg text-[#A488F5] font-medium my-auto hover:text-[#9575e8] transition-colors"
               onClick={handleSeeAllPromotions}
@@ -181,7 +181,7 @@ export const HomeDark: React.FC = () => {
 
         <section className="w-full pb-6 px-4 mt-6" aria-label="Learning resources">
           <div className="flex w-full items-center justify-between mb-4">
-            <h2 className="text-foreground text-[19px] font-normal">Learning resources</h2>
+            <h2 className="text-foreground text-[19px] font-normal">Content hub</h2>
             <button
               onClick={handleNavigateToLearn}
               className="flex items-center gap-1 text-lg text-[#A488F5] font-medium hover:text-[#9575e8] transition-colors"
@@ -204,9 +204,7 @@ export const HomeDark: React.FC = () => {
           </div>
         </section>
 
-        <div className="fixed bottom-0 left-0 right-0 max-w-[480px] mx-auto">
-          <BottomNavigation />
-        </div>
+        <BottomNavigation />
       </div>
     </div>
   );
