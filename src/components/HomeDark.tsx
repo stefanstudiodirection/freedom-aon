@@ -127,7 +127,7 @@ export const HomeDark: React.FC = () => {
                 accountName="Pension"
                 subtitle=""
                 balance={formatBalance(accounts.pension.balance)}
-                onClick={() => navigate('/account/pension')}
+                onClick={() => navigate('/pension-warning')}
               />
             </div>
 
