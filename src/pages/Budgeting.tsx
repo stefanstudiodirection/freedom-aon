@@ -480,7 +480,7 @@ const Budgeting: React.FC = () => {
 									<div className="flex items-start justify-between mb-3">
 										<div className="flex items-center gap-3">
 											<div
-												className="w-10 h-10 rounded-full flex items-center justify-center text-white"
+												className="w-10 h-10 rounded-lg flex items-center justify-center text-white"
 												style={{ backgroundColor: category.color }}
 											>
 												{category.icon}
