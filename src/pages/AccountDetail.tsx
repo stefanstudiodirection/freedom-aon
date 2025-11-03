@@ -216,13 +216,13 @@ const AccountDetail: React.FC = () => {
 	return (
 		<div className="min-h-screen bg-[#F3F3F3] dark:bg-black text-foreground max-w-[480px] mx-auto flex flex-col">
 			<div className="px-4 py-6 flex flex-col flex-1">
-				<button className="mb-4 text-foreground" onClick={() => navigate("/")}>
+				<button className="mb-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-foreground" onClick={() => navigate("/")}>
 					<ArrowLeft className="w-6 h-6" />
 				</button>
 				<div>
 					{/* <div className="mb-2 text-sm opacity-50">{config.display}</div> */}
 					<div className="text-2xl mb-4 font-semibold">{config.display}</div>
-					<div className="rounded-lg bg-white dark:bg-[#211E1E] border border-border flex items-center justify-between pt-2 pb-2 pl-2 pr-5 mb-4">
+					<div className="rounded-lg bg-white dark:bg-[#211E1E] flex items-center justify-between pt-2 pb-2 pl-2 pr-5 mb-4">
 						<div className="flex items-center gap-2">
 							{/* TODO: Icon if needed */}
 							<div
@@ -286,7 +286,7 @@ const AccountDetail: React.FC = () => {
 								className="self-stretch flex items-center gap-1 text-lg text-[#A488F5] font-medium my-auto hover:text-[#9575e8] transition-colors"
 								onClick={() => navigate("/budgeting")}
 							>
-								<span className="text-[#A488F5] self-stretch my-auto text-sm">
+								<span className="text-[#A488F5] self-stretch my-auto text-base font-semibold">
 									View budget
 								</span>
 								<img
