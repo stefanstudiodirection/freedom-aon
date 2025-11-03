@@ -107,22 +107,6 @@ export const PensionWarning: React.FC = () => {
 
       {/* Bottom Actions */}
       <div className="space-y-4 pt-4">
-        {/* Checkbox */}
-        <div className="flex items-center gap-3">
-          <Checkbox 
-            id="dontShow" 
-            checked={dontShowAgain}
-            onCheckedChange={(checked) => setDontShowAgain(checked as boolean)}
-            className="border-white/40 data-[state=checked]:bg-[#A488F5] data-[state=checked]:border-[#A488F5]"
-          />
-          <label 
-            htmlFor="dontShow" 
-            className="text-base cursor-pointer select-none"
-          >
-            Don't show this message again
-          </label>
-        </div>
-
         {/* Continue Button */}
         <Button 
           onClick={handleContinue}
