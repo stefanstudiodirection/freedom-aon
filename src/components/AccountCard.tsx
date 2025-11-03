@@ -67,30 +67,30 @@ export const AccountCard: React.FC<AccountCardProps> = ({
 			tabIndex={0}
 			className={`w-full ${getBackgroundColor()} ${getPaddingClass()} ${getZIndex()} rounded-[9px] cursor-pointer transition-opacity relative`}
 		>
-			{/* Top section: Logo | Balance */}
-			<div className="flex justify-between items-start mb-1">
-				<MercerLogo
-					className={getTextColor()}
-					style={{ color: type === "pension" ? "#FFFFFF" : "#211E1E" }}
-				/>
-
-				<div
-					className={`text-[20px] ${getTextColor()} font-normal leading-none tracking-[0.55px]`}
-				>
-					{balance}
+			<div className="flex justify-between items-start">
+				<div className="">
+					<MercerLogo
+						className={getTextColor()}
+						style={{ color: type === "pension" ? "#FFFFFF" : "#211E1E" }}
+					/>
+					<h2
+						className={`${getTextColor()} text-[18px] font-medium leading-tight`}
+					>
+						{accountName}
+					</h2>
+					<p className={`${getTextColor()} text-sm mt-1 leading-tight`}>
+						{subtitle}
+					</p>
 				</div>
-			</div>
 
-			{/* Middle section: Account name + Subtitle */}
-			<div>
-				<h2
-					className={`${getTextColor()} text-[18px] font-medium leading-tight`}
-				>
-					{accountName}
-				</h2>
-				<p className={`${getTextColor()} text-sm mt-1 leading-tight`}>
-					{subtitle}
-				</p>
+				{/* Middle section: Account name + Subtitle */}
+				<div>
+					<div
+						className={`text-[20px] ${getTextColor()} font-normal leading-none tracking-[0.55px]`}
+					>
+						{balance}
+					</div>
+				</div>
 			</div>
 
 			{/* Bottom section: Only for Pension */}
