@@ -135,7 +135,7 @@ export const HomeDark: React.FC = () => {
           </div>
         </main>
 
-        <section className="w-full pb-6 px-4 mt-6" aria-label="Promotions">
+        <section className="w-full pb-6 px-4" aria-label="Promotions">
           <div className="flex w-full items-center gap-[40px_100px] leading-none justify-between">
             <h2 className="text-foreground text-[18px] font-normal self-stretch my-auto">Rewards</h2>
             <button

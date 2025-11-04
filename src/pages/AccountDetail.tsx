@@ -263,7 +263,7 @@ const AccountDetail: React.FC = () => {
 				</button>
 				<div>
 					{/* <div className="mb-2 text-sm opacity-50">{config.display}</div> */}
-					<div className="text-2xl mb-4 font-normal">{config.display}</div>
+					<div className="text-[28px] mb-4 font-normal">{config.display}</div>
 					<div className="rounded-lg bg-white dark:bg-[#211E1E] flex items-center justify-between pt-2 pb-2 pl-2 pr-5 mb-4">
 						<div className="flex items-center gap-2">
 							{/* TODO: Icon if needed */}
@@ -273,7 +273,7 @@ const AccountDetail: React.FC = () => {
 							>
 								<span className="text-2xl">{account.icon}</span>
 							</div>
-							<span className="font-normal text-foreground">Balance</span>
+							<span className="text-xl font-normal text-foreground">Balance</span>
 						</div>
 						<div className="text-lg ml-2 font-normal text-foreground">
 							{formatCurrency(account.balance)}
@@ -359,15 +359,15 @@ const AccountDetail: React.FC = () => {
 											{getTransactionIcon(tr.type)}
 										</div>
 										<div className="flex-1 min-w-0">
-											<div className="font-normal text-foreground">
+											<div className="text-xl font-normal text-foreground">
 												{getTransactionLabel(tr.type)}
 											</div>
-											<div className="text-[#8E8E93] text-sm">
+											<div className="text-[#8E8E93] text-base">
 												{formatDate(tr.date)}
 											</div>
 										</div>
 										<div
-											className={`text-right font-normal ${
+											className={`text-xl text-right font-normal ${
 												tr.amount > 0 ? "text-[#34C759]" : "text-foreground"
 											}`}
 										>
