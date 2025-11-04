@@ -18,7 +18,7 @@ export const PromotionCard: React.FC<PromotionCardProps> = ({
   };
 
  const cardClasses = isWide 
-  ? "flex flex-col relative aspect-[1.335] min-w-60 min-h-[200px] w-[267px] my-auto pt-[111px] pb-4 px-4 rounded-lg items-start"
+  ? "flex flex-col justify-end p-4 relative aspect-[1.335] min-w-60 min-h-[200px] w-[267px] my-auto rounded-lg"
   : "flex flex-col relative aspect-[0.47] min-h-[200px] w-[94px] my-auto pl-4 pt-[111px] pb-4 rounded-lg items-start";
 
   return (
