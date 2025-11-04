@@ -337,7 +337,7 @@ const LearnArticle: React.FC = () => {
         <div className="p-4">
           <button 
             onClick={() => navigate('/learn')} 
-            className="hover:opacity-70 transition-opacity"
+            className="mb-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-black"
             aria-label="Go back"
           >
             <ArrowLeft className="w-6 h-6" />
