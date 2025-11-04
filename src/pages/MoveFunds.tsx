@@ -152,7 +152,7 @@ export const MoveFunds: React.FC = () => {
         {/* Transfer Cards */}
         <div className="">
           {/* Move From Card */}
-          <div className="bg-white dark:bg-[#211E1E] border border-border rounded-lg p-4 flex items-center justify-between">
+          <div className="bg-white dark:bg-[#211E1E] border rounded-lg p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div 
                 className="w-10 h-10 flex items-center justify-center bg-[#211E1E] dark:bg-[#000] rounded-[4px]"
@@ -181,7 +181,7 @@ export const MoveFunds: React.FC = () => {
           </div>
 
           {/* Move To Card */}
-          <div className="bg-white dark:bg-[#211E1E] border border-border rounded-lg p-4 flex items-center justify-between">
+          <div className="bg-white dark:bg-[#211E1E] rounded-lg p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div 
                 className="w-10 h-10 flex items-center justify-center bg-[#211E1E] dark:bg-[#000] rounded-[4px]"
@@ -206,7 +206,7 @@ export const MoveFunds: React.FC = () => {
           <Button 
             onClick={handleNext}
             disabled={!isValidAmount()}
-            className={`w-full h-14 text-base rounded-xl font-medium ${
+            className={`w-full h-14 text-base rounded-lg font-medium ${
               isValidAmount() 
                 ? 'bg-[#A488F5] hover:bg-[#9575e8] text-white' 
                 : 'bg-[#2a2626] text-[#716860] cursor-not-allowed'

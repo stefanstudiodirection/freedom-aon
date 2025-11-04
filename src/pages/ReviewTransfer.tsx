@@ -99,7 +99,7 @@ export const ReviewTransfer: React.FC = () => {
 				{/* Transfer Summary Cards */}
 				<div className="space-y-4 mb-6">
 					{/* Move From Card */}
-					<div className="bg-white dark:bg-[#211E1E] border border-border rounded-lg p-4">
+					<div className="bg-white dark:bg-[#211E1E] rounded-lg p-4">
 						<div className="flex items-center justify-between">
 							<div className="flex items-center gap-3">
 								<div
@@ -129,7 +129,7 @@ export const ReviewTransfer: React.FC = () => {
 					</div>
 
 					{/* Move To Card */}
-					<div className="bg-white dark:bg-[#211E1E] border border-border rounded-lg p-4">
+					<div className="bg-white dark:bg-[#211E1E] rounded-lg p-4">
 						<div className="flex items-center justify-between">
 							<div className="flex items-center gap-3">
 								<div
@@ -161,7 +161,7 @@ export const ReviewTransfer: React.FC = () => {
 
 				{/* Retirement Impact Warning - Only show if pension is involved */}
 				{showRetirementWarning && (
-					<div className="bg-white dark:bg-[#211E1E] border border-border rounded-lg p-4 mb-6">
+					<div className="bg-white dark:bg-[#211E1E] rounded-lg p-4 mb-6">
 						<div className="flex items-start gap-3">
 							<div className="flex-shrink-0">
 								<AlertTriangle className="w-6 h-6 text-[#E4B33D]" />
@@ -199,7 +199,7 @@ export const ReviewTransfer: React.FC = () => {
 				<div className="">
 					<Button
 						onClick={handleMoveFunds}
-						className="w-full h-14 bg-[#A488F5] hover:bg-[#9575e8] text-white font-medium text-base rounded-xl"
+						className="w-full h-14 bg-[#A488F5] hover:bg-[#9575e8] text-white font-medium text-base rounded-lg"
 					>
 						Move funds
 					</Button>
