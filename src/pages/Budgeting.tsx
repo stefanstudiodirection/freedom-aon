@@ -564,7 +564,7 @@ const Budgeting: React.FC = () => {
 									</div>
 
 									<div className="flex items-center justify-between text-sm mb-3">
-										<span className="text-muted-foreground">
+										<span className="text-xl text-muted-foreground">
 											<span style={{ color: account.color }}>
 												{formatCurrency(category.spent)}
 											</span>{" "}
@@ -657,14 +657,14 @@ const Budgeting: React.FC = () => {
 				{/* Transactions Section */}
 				<div>
 					<div className="flex items-center justify-between mb-4">
-						<h2 className="text-lg font-normal text-foreground">
+						<h2 className="text-xl font-normal text-foreground">
 							Transactions
 						</h2>
 						<button
 							className="text-sm text-[#A488F5] font-normal self-stretch flex items-center gap-1"
 							onClick={() => navigate("/transactions")}
 						>
-              <span className="text-[#A488F5] self-stretch my-auto">See all</span>
+              <span className="text-[#A488F5] self-stretch my-auto text-lg">See all</span>
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c7bef006abc66b8f7fa6574d6a4853ed2994e5d2?placeholderIfAbsent=true"
                 className="aspect-[1] object-contain w-5 self-stretch shrink-0 my-auto"
