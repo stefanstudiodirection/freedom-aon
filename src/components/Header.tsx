@@ -34,17 +34,16 @@ export const Header: React.FC = () => {
 				<div className="self-stretch flex items-center gap-3 my-auto">
 					<ThemeToggle />
 					<button
-						className="bg-[#fff] dark:bg-[rgba(33,30,30,1)] self-stretch flex min-h-12 w-12 items-center gap-2 justify-center h-12 my-auto px-3 rounded-[46px] hover:bg-[rgba(33,30,30,0.8)] transition-colors"
+						className="bg-[#fff] dark:bg-[rgba(33,30,30,1)] self-stretch flex min-h-12 w-12 items-center gap-2 justify-center h-12 my-auto px-3 rounded-[46px] hover:bg-[rgba(33,30,30,0.8)] transition-colors text-foreground"
 						onClick={handleNotificationClick}
 						aria-label={`Notifications ${
 							notificationCount > 0 ? `(${notificationCount})` : ""
 						}`}
 					>
-						<img
-							src="https://api.builder.io/api/v1/image/assets/TEMP/f42ad3ff1bd0f0db1e478ebfa5a39473323cd7eb?placeholderIfAbsent=true"
-							className="aspect-[1] object-contain w-6 self-stretch my-auto"
-							alt="Notification bell"
-						/>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15.7499 21C15.7499 21.1989 15.6709 21.3897 15.5302 21.5303C15.3896 21.671 15.1988 21.75 14.9999 21.75H8.99989C8.80098 21.75 8.61021 21.671 8.46956 21.5303C8.32891 21.3897 8.24989 21.1989 8.24989 21C8.24989 20.8011 8.32891 20.6103 8.46956 20.4697C8.61021 20.329 8.80098 20.25 8.99989 20.25H14.9999C15.1988 20.25 15.3896 20.329 15.5302 20.4697C15.6709 20.6103 15.7499 20.8011 15.7499 21ZM20.7946 16.4944C20.2733 15.5981 19.4999 13.0622 19.4999 9.75C19.4999 7.76088 18.7097 5.85322 17.3032 4.4467C15.8967 3.04018 13.989 2.25 11.9999 2.25C10.0108 2.25 8.10311 3.04018 6.69659 4.4467C5.29007 5.85322 4.49989 7.76088 4.49989 9.75C4.49989 13.0631 3.72551 15.5981 3.2052 16.4944C3.07233 16.7222 3.00189 16.9811 3.00099 17.2449C3.00008 17.5086 3.06874 17.768 3.20005 17.9967C3.33135 18.2255 3.52065 18.4156 3.74886 18.5478C3.97708 18.6801 4.23613 18.7498 4.49989 18.75H19.4999C19.7636 18.7496 20.0225 18.6798 20.2506 18.5475C20.4787 18.4151 20.6678 18.225 20.799 17.9963C20.9302 17.7676 20.9988 17.5083 20.9979 17.2446C20.9969 16.9809 20.9265 16.7222 20.7936 16.4944H20.7946Z" fill="currentColor"/>
+              <circle cx="17.9999" cy="6.00039" r="3.6" fill="#A488F5"/>
+            </svg>
 					</button>
           <button 
             className="min-h-12 w-12 rounded-[46px]" 

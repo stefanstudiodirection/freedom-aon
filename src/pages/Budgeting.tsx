@@ -528,7 +528,7 @@ const Budgeting: React.FC = () => {
 				</div>
 
 				{/* Categories Section */}
-				<div className="mb-6">
+				<div className="mb-3">
 					<div className="flex items-center justify-between mb-4">
 						<h2 className="text-lg font-semibold text-foreground">
 							Categories
