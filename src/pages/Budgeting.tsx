@@ -446,7 +446,7 @@ const Budgeting: React.FC = () => {
 						setSelectedAccount(value as "savings" | "currentAccount")
 					}
 				>
-					<SelectTrigger className="w-full mb-6 bg-white dark:bg-[#211E1E] h-20 [&>span]:pointer-events-auto">
+					<SelectTrigger className="w-full mb-3 bg-white dark:bg-[#211E1E] h-20 [&>span]:pointer-events-auto">
 						<SelectValue>
 							<div className="flex items-center justify-between w-full gap-4">
 								{/* Left side - Icon and Account info */}
