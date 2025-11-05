@@ -101,11 +101,15 @@ const Transactions: React.FC = () => {
 							onClick={() => setSelectedAccount(account)}
 							className={`px-4 py-2 rounded-lg text-base font-normal transition-colors ${
 								selectedAccount === account
-									? "text-white"
+									? account === "pension"
+										? "text-white dark:!bg-white dark:!text-black"
+										: "text-white"
 									: "bg-white dark:bg-[#1C1C1E] text-foreground"
 							}`}
 							style={
-								selectedAccount === account
+								selectedAccount === account && account !== "pension"
+									? { backgroundColor: accountColors[account] }
+									: selectedAccount === account && account === "pension"
 									? { backgroundColor: accountColors[account] }
 									: undefined
 							}
